@@ -1,4 +1,4 @@
-nav{
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,4 +21,22 @@ nav ul li:last-child img {
   height: 40px;
   object-fit: cover;
   border-radius: 50%
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 12px;
+
+    padding-block: 4px;
+  }
+
+  nav ul li:last-child img {
+    width: 30px;
+    height: 30px;
+  }
 }
